@@ -5,12 +5,7 @@ import {
 
 const INITIAL_STATE = {
     headerLinks: [
-        {
-            title: 'yooo'
-        },
-        {
-            title: 'YOOO'
-        }
+      
     ],
     navbarLinks: [
         {
