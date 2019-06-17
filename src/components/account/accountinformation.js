@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class AccountInformation extends Component {
-    render () {
+    render() {
         return (
             <div>
                 account info

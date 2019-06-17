@@ -3,35 +3,34 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-import AccountInformation from './accountInformation';
+import AccountInformation from './accountinformation';
 import PurchaseHistory from './purchaseHistory';
 
-
 class Account extends Component {
-
-    componentDidMount() {
+    componentDidMount(){
 
         const navbarLinks = [
             {
-                _id: 0,
+                //_id: 0,
                 title: 'Purchase History',
                 active: false,
                 component: <PurchaseHistory/>
             },
             {
-                _id: 1,
+                //_id: 1,
                 title: 'Account Information',
                 active: true,
                 component: <AccountInformation/>
             }
         ]
 
-        this.props.setHeaderLinks([]);
-        this.props.setNavbarLinks(navbarLinks);
+        this.props.setHeaderLinks([])
+        this.props.setNavbarLinks(navbarLinks)
+
     }
-    
-    renderContent(){
+    renderContent() {
         let jsx;
+        
         if(this.props.navbarLinks) {
             this.props.navbarLinks.forEach(link => {
                 if(link.active) {
@@ -42,11 +41,10 @@ class Account extends Component {
         return jsx;
     }
 
-
-    render () {
+    render() {
         return (
             <div>
-                {this.renderContent()}
+                { this.renderContent() }
             </div>
         )
     }
