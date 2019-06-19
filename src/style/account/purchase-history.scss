@@ -4,6 +4,20 @@
     grid-column: s/e;
 
     &__page-title{
-
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 59px;
     }
+
+    &__bottom-border{
+        margin-top: 35px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+}
+
+.purchases{
+
+}
+
+.purchase-detail{
+
 }
