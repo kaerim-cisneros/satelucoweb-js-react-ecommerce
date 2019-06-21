@@ -1,23 +1,33 @@
-.purchase-history{
+.purchase-history {
 
-    grid-row: contest-s/contest-e;
-    grid-column: s/e;
+    
 
-    &__page-title{
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 59px;
+    &__content {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        margin: 37px 0;
+        
     }
 
-    &__bottom-border{
-        margin-top: 35px;
-        border-bottom: 1px solid #f2f2f2;
+    &__purchasespurchases{
+        margin: 37px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 80px);
+        grid-gap: 10px;
+        width: 360px;
     }
+
+    &__page-title {
+        border-bottom: 1px solid #CCC;
+    }
+    &__bottom-border {
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+   
 }
 
-.purchases{
 
-}
 
-.purchase-detail{
-
+.purchase-detail {
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class PurchasesDetail extends Component {
+class PurchaseDetail extends Component {
     render() {
 
         const { className } = this.props;
@@ -13,4 +13,4 @@ class PurchasesDetail extends Component {
     }
 }
 
-export default PurchasesDetail
+export default PurchaseDetail
