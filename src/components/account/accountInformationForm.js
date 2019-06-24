@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { reduxForm, Field } from 'redux-form';
 
-import { FormInput, FormButton } from '../formField';
+import { FormInput, LongGrayButton } from '../formField';
 
 import history from '../../history';
 
@@ -48,19 +48,15 @@ class AccountInformationForm extends Component {
                 placeholder='Zip Code'
                 name='zipcode'
                 component={FormInput}/>
-                {/*<Field className='account-information__password'
-                type='password'
-                title='Password'
-                placeholder='Password'
-                name='password'
-                component={FormInput}/>
-                <div className='sign-in-form__line'></div>
-                <Field className='sign-in-form__login'
-                onClick={() => history.push('/account')}
-                type='submit'
-                title='Login'
-                name='login'
-                component={FormButton}/>*/}
+                
+                
+                <Field className='account-information-form__change-password'
+                onClick={() => console.log("password change")}
+                type='botton'
+                labelTitle='Password'
+                title='Change Password'
+                name='change-password'
+                component={LongGrayButton}/>
 
             </form>
         )
