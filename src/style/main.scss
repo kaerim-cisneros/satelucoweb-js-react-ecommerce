@@ -18,7 +18,11 @@
 @import 'shop/shop-search-bar';
 @import 'shop/shop-product';
 
-// QUANTITY
+//Shop Cart
+@import './shop/shop-cart';
+
+
+// Quantity
 @import './quantity.scss';
 @import './green-price-tag.scss';
 
