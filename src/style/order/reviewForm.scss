@@ -33,4 +33,45 @@
         grid-row: buttons-s/buttons-e;
         grid-column: proceed-s/proceed-e;
     }
+    &__details{
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+        justify-self: end;
+        align-self: end;
+        transform: translateX(-40px) translateY(60px);
+    }
+}
+
+.review-detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 65px;
+    align-items: center;
+    
+    &__title {
+        grid-column: 1/2;
+        grid-row: 1/-1;
+        text-align: start;
+        font-size:14px;
+    }
+
+    &__price {
+        grid-column: 2/3;
+        grid-row: 1/-1;
+        font-size: 18px;
+        font-weight: 600;
+        text-justify: center;
+    }
+}
+
+.review-detail__green{
+    margin-top: 18px;
+    
+    
+    &-title,
+    &-price  {
+        color: #00CB79;
+        font-weight: 600;
+    }
 }
