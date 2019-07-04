@@ -9,7 +9,8 @@ import ReviewProducts from './reviewProducts';
 
 class ReviewForm extends Component {
     render() {
-        const { className, handleSubmit } = this.props;
+        const { className, handleSubmit, subtotal } = this.props;
+        let tax = subtotal * .06;
 
         return (
             <form onSubmit={handleSubmit} className={`${className} review-form`}>
@@ -36,11 +37,11 @@ class ReviewForm extends Component {
                 <div className='review-form__details review-details'>
                     <div className='review-form__details__subtotal review-detail'>
                         <div className='review-detail__title'>Subtotal</div>
-                        <div className='review-detail__price'>$7.96</div>
+                        <div className='review-detail__price'>${subtotal.toFixed(2)}</div>
                     </div>
                     <div className='review-form__details__tax review-detail'>
                         <div className='review-detail__title'>Tax</div>
-                        <div className='review-detail__price'>$0.16</div>
+                        <div className='review-detail__price'>${tax.toFixed(2)}</div>
                     </div>
                     <div className='review-form__details__shipping review-detail'>
                         <div className='review-detail__title'>Shipping</div>
@@ -48,7 +49,7 @@ class ReviewForm extends Component {
                     </div>
                     <div className='review-form__details__total review-detail review-detail__green'>
                         <div className='review-detail__title review-detail__green-title'>Total</div>
-                        <div className='review-detail__price review-detail__green-price'>$8.12</div>
+                        <div className='review-detail__price review-detail__green-price'>${(subtotal + tax).toFixed(2)}</div>
                     </div>
                 </div>
             </form>
