@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import PageTitle from '../pageTitle';
+import PaymentForm from './paymentForm';
 
 // REDUX 
 
@@ -22,7 +23,7 @@ class Payment extends Component {
         return (
             <div className='sign-in'>
                 <PageTitle className='sign-in__page-title' title='Payment Information' />
-                {/* <PaymentForm onSubmit={this.onSubmit} className='sign-in__form' /> */}
+                <PaymentForm onSubmit={this.onSubmit} className='sign-in__form' />
             </div>
         )
     }
@@ -30,4 +31,4 @@ class Payment extends Component {
 
 Payment = connect(null, actions)(Payment);
 
-export default Payment; 
+export default Payment;

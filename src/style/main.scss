@@ -32,6 +32,10 @@
 @import 'order/reviewForm';
 @import 'order/reviewProduct';
 
+// INFORMATION
+@import 'information/payment';
+@import 'information/shipping'; 
+
 html {
     font-size: 62.5%;
 }
