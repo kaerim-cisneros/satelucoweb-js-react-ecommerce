@@ -10,13 +10,14 @@ class OrderSummary extends Component{
     render(){
         const { className } = this.props;
         let subtotal = 0;
-        let tax = subtotal * .06;
+        let tax = 0;
         let productQuantity = 0;
         this.props.cartProducts.map(cartProduct => {
             subtotal += cartProduct.quantity * cartProduct.product.price;
             productQuantity += cartProduct.quantity;
-            tax
+            tax += subtotal * .06;
             console.log(subtotal);
+            console.log(subtotal*.06);
         })
         return(
             <div className={`${className} order-summary`}>
