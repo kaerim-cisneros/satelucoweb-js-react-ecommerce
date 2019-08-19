@@ -79,4 +79,4 @@ function mapStateToProps(state) {
 
 PaymentForm = connect(mapStateToProps)(PaymentForm);
 
-export default PaymentForm; 
+export default PaymentForm;
